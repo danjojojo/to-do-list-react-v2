@@ -1,0 +1,165 @@
+* {
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202124;
+}
+
+h1,
+h2,
+h3,
+input,
+button {
+  font-family: 'Press Start 2P', system-ui;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: #1e1e1e;
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header h3{
+  margin: 0 auto;
+  color: white;
+}
+
+header p{
+  margin: 0 auto;
+  color: rgb(210, 210, 210);
+}
+
+header div{
+  display: flex;
+  align-items: stretch;
+}
+
+header, header div,
+.main {
+  max-width: 800px;
+  width: 100%;
+  margin: 5px auto;
+  gap: 14px;
+}
+
+header input {
+  flex: 1;
+  border-radius: 14px;
+  outline: none;
+  width: 100%;
+}
+
+header button {
+  border-radius: 14px;
+  background: transparent;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.7;
+}
+
+header input {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+header button {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.main h3{
+  margin: 5px 0;
+  color: white;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: white;
+}
+
+.errorMsg {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgb(255, 101, 101);
+  color: white;
+}
+
+.successMsg {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgb(105, 243, 147);
+  color: white;
+}
+
+
+.todoItem p, .errorMsg p, .successMsg p {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  transition-duration: 200ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
+
+
+
+@media (min-width: 640px) {
+
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
